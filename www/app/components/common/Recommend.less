@@ -1,0 +1,51 @@
+.recommend{
+  padding: 15px 0;
+  margin-bottom: 15px;
+  background-color: #fff;
+  .title{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-left: 2px solid #ed424b;
+    text-indent:5px;
+    font-size: 16px;
+    line-height: 16px;
+    span{
+      font: 12px/16px "consolas";
+      color:#999;
+      margin-left: 20px;
+    }
+  }
+  .list{
+    width: 100%;
+    overflow-x: auto;
+    // overflow: hidden;  
+    .listul{
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      .listli{
+        float: left;
+        padding-left: 8px;
+        width:100px;
+        .link{
+          display: block;
+          text-decoration: none;
+          img{
+            width: 100%;
+            height: 125px;
+          }
+          p{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          :nth-of-type(2){
+            font-size: 0.8rem;
+            color:#777;
+          }
+        }
+      }
+    }
+  }
+}

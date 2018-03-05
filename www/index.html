@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+	<title>Document</title>
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="stylesheet" href="./res/jquery-ui.min.css">
+	<!-- <link rel="stylesheet" href="./res/swiper.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css"> -->
+	<link rel="stylesheet" href="./res/mint-ui.css">
+	<link rel="stylesheet" href="./res/fonts/iconfont.css">
+	<style>
+		html,body,div,span,h1,h2,h3,p,img,i,ul,li,label,footer,header,time,mark,
+		video,audio{
+			margin: 0;
+			padding: 0;
+		}
+		*::-webkit-scrollbar{
+			height: 0;
+			width: 0;
+		}
+		html{
+
+			height: 100%;
+			font-size: 62.5%;
+		}
+		body{
+			height: 100%;
+			font-size: 1.4rem;
+			overflow: hidden;
+		}
+		.dragf{
+			position: relative;
+		}
+		.dragc{
+			position: absolute;
+		}
+		.bar-enter-active,.bar-leave-active,.setting-enter-active,.setting-leave-active
+		.plan-enter-active,.plan-leave-active{
+			transition: all 0.5s linear 0s;			
+		}
+		.bar-enter-active{
+			width: 100%;
+		}
+		.bar-leave-active,.bar-enter{
+			/* 清除原有参数的影响 */
+			width: 0 !important;
+		}
+		.setting-enter,.setting-leave-active{
+			opacity: 0 ;
+		}
+		.plan-leave-active,.plan-enter{
+			height: 0 !important;
+		}
+		.plan-enter-active{
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="root">
+		<App></App>
+	</div>
+</body>
+<!-- 链接有道的包 -->
+<!-- <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script> -->
+<script src="./res/md5.js"></script>
+<!-- 请求本地的有道包 -->
+
+
+<script type="text/javascript" src="./res/jquery.js"></script>
+<script src="./res/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./dist/bundle.js"></script>
+</html>

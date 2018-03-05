@@ -1,0 +1,25 @@
+.box{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+  .router-view{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    bottom: 4.6rem;
+    left: 20rem;
+    overflow-x: hidden;
+    background-color: #fafafa;
+    &::-webkit-scrollbar{
+      width:8px;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 4px;
+      background-color: #e1e1e2;
+      &:hover{
+        background-color: #cfcfd1;
+      }
+    }
+  }
+}

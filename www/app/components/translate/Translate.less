@@ -1,0 +1,45 @@
+.showcn{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font: 18px/40px "Microsoft YaHei";
+  display: flex;
+  flex-direction: column;
+  header{
+    height: 40px;
+    position: relative;
+    padding-bottom: 5px;
+    background-color: #999;
+    button{
+      width: 55px;
+      &.cur{
+        background-color: burlywood;
+      }
+    }
+    .left{
+      margin-left: 5px;
+      height: 40px;
+      float: left;
+    }
+    .right{
+      margin-right: 5px;
+      height: 40px;
+      float: right;
+    }
+  }
+  .con{
+    flex: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    position: relative;
+    .yiwen{
+      text-indent: 2em;
+    }
+    .cidian{
+      text-indent: 1em;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
